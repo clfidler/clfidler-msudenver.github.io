@@ -1,21 +1,108 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Lab 4 Webpage: Bookstores and Libraries</title>
+    <title>My Lab 5 Webpage: Bookstores and Libraries</title>
   <style>
-    
+    body {width: 100%; background-color: #cccccc}
+    #books {
+      text-align: left;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    #bannerphoto {
+      background-color: #d9d2e9;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    #mypic {
+      width: 95%;
+      object-fit: contain;
+      border: 10px solid #202f78;
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+    }
+    .photocaption {
+      font-size: 20px;
+      font-family: Garamond;
+      text-align: left;
+      padding: 20px;
+    }
+    p, td, li {
+      font-size: 20px;
+      font-family: Garamond;
+    }
+    h1 {
+      font-family: Garamond;
+      background-color: #b8aed2;
+      font-size: 50px;
+      color: black;
+      text-align: center;
+    }
+    h2 {
+      font-family: Garamond;
+      background-color: #94b3ce;
+      font-size: 30px;
+      color: black;
+      text-align: center;
+    }
+    h4 {
+      font-family: Garamond;
+      background-color: #94b3ce;
+      font-size: 30px;
+      text-align: center;
+      color: black;
+    }
+    h3 {
+      font-family: Garamond;
+      text-decoration: underline;
+      font-size: 25px;
+    }
+    a {text-decoration: underline; color: black; font-family: Garamond;}
+    a:visited {color: blue; font-family: Garamond;}
+    a:hover {background-color: #b8aed2; color: black; font-family: Garamond;}
+    #denverlibraries {
+      background-color: #d9d2e9;
+      float: left;
+      margin-left: 0;
+      margin-right: 10px;
+      border: dotted 8px #000000;
+      padding: 10px;
+      width: 1000px;
+      height: auto;
+    }
+    #bookstoresvisited {
+      width: 100%;
+      font-family: Garamond;
+      border-collapse: collapse;
+    }
+    #bookstoresvisited th, #bookstoresvisited td {
+      border: 3px solid #000000;
+      padding: 8px;
+    }
+    #bookstoresvisited td {
+      background-color: #94b3ce;
+      color: black;
+    }
+    #bookstoresvisited th {
+      font-family: Garamond;
+      font-weight: bold;
+      font-size: 25px;
+      background-color: #202f78;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      color: white;
+    }
   </style>
   </head>
   <body>
   <div id = "books">
-    <h1>My Lab 4 Webpage: Bookstores and Libraries</h1>
+    <h1>My Lab 5 Webpage: Bookstores and Libraries</h1>
     <h2>The Importance of Bookstores & Libraries</h2>
     <p>Bookstores and libraries are pillars of communities, providing inclusive spaces promoting literacy and community engagement. Both bookstores and libraries foster spaces of curiosity, discovery, and imagination. Many independent bookstores stock independently published, local authors, who don’t have a huge marketing budget, ensuring their work is put in front of audiences. Additionally, bookstores and libraries make concentrated efforts to ensure access to banned books, ensuring that books with themes that state and local governments are politically opposed to are not successfully censored completely. Many bookstores and libraries offer book clubs, providing spaces for relationship-building within a community. Libraries often offer free children’s programs that promote literacy and creativity. Libraries and bookstores are also important to a local economy. To outline this, consider Amazon’s impact on the book industry.</p>
-    <h3>Resisting Amazon’s Attempts to Monopolize the Book Industry</h3>
-    <p>Amazon is certainly the cheapest way to buy books, often pricing hardcover books at $15 or less, while a bookstore would sell the same book for $20-$30. This is because bookstores must make a profit on their sales, while Amazon actively sells their books at a loss. This appears to be a great deal for the consumer. However, this is simply an attempt by Amazon to undercut their competitors and ultimately put those competitors out of business to monopolize the industry. This is demonstrated best by Amazon’s price war with Diapers.com. In the late 2000s, Diapers.com represented a decent chunk of children’s care supplies including diapers and baby formula. Amazon began pricing their diapers at a loss to undercut Diapers.com, ultimately damaging the smaller company’s profits enough that Amazon bought out the company. Following the buyout, Amazon drastically increased the price of their diapers now that they had taken out their major competitor. Therefore, there’s reason to believe that Amazon is trying to do the same thing to their main competitor for books, Barnes & Noble, as well as other bookstores. Not only does this undermine the consumer and smaller businesses, but it also threatens the publishing industry. If Amazon succeeds in monopolizing book sales, the company will essentially determine what’s published. Publishers will begin to only publish books that seem to sell well on Amazon. Therefore, I urge you to utilize local bookstores and libraries to obtain books. While local bookstores price their books higher than Amazon, there are tons of books available at your local library for free! Most major cities also have used bookstores, which typically price their books between $1-$10. Additionally, buying from local stores keeps more money in the local economy than buying from Amazon.</p>
-    
   <div id = "denverlibraries">
-    <h2>Libraries in the Denver Area</h2>
+    <h4>Libraries in the Denver Area</h4>
     <p>There are 50+ libraries in the Denver metro area. Here's some great ones to visit. Library cards are free!</p>
     <ul>
       <li>Denver Public Library: Central Library – 10 W 14th Ave, Denver, CO 80204</li>
@@ -25,7 +112,10 @@
       <li>Edgewater Library – Jefferson County Public Libraries – 1800 N. Harlan St., Edgewater, CO 80214</li>
     </ul>
   </div>
-  
+  <div id = "amazon">
+    <h3>Resisting Amazon’s Attempts to Monopolize the Book Industry</h3>
+    <p>Amazon is certainly the cheapest way to buy books, often pricing hardcover books at $15 or less, while a bookstore would sell the same book for $20-$30. This is because bookstores must make a profit on their sales, while Amazon actively sells their books at a loss. This appears to be a great deal for the consumer. However, this is simply an attempt by Amazon to undercut their competitors and ultimately put those competitors out of business to monopolize the industry. This is demonstrated best by Amazon’s price war with Diapers.com. In the late 2000s, Diapers.com represented a decent chunk of children’s care supplies including diapers and baby formula. Amazon began pricing their diapers at a loss to undercut Diapers.com, ultimately damaging the smaller company’s profits enough that Amazon bought out the company. Following the buyout, Amazon drastically increased the price of their diapers now that they had taken out their major competitor. Therefore, there’s reason to believe that Amazon is trying to do the same thing to their main competitor for books, Barnes & Noble, as well as other bookstores. Not only does this undermine the consumer and smaller businesses, but it also threatens the publishing industry. If Amazon succeeds in monopolizing book sales, the company will essentially determine what’s published. Publishers will begin to only publish books that seem to sell well on Amazon. Therefore, I urge you to utilize local bookstores and libraries to obtain books. While local bookstores price their books higher than Amazon, there are tons of books available at your local library for free! Most major cities also have used bookstores, which typically price their books between $1-$10. Additionally, buying from local stores keeps more money in the local economy than buying from Amazon.</p>
+  </div>
     <h2>Unique Bookstores I've Visited</h2>
     <table id = "bookstoresvisited">
       <tr>
@@ -61,7 +151,7 @@
     </table>
   
   <div id = "bannerphoto">
-      <img src = "bannerbooks.jpg" />
+      <img id = "mypic" src = "bannerbooks.jpg" />
       <p class = "photocaption"> Right to Left: Tattered Cover, Powell's City of Books, Black Ice Comics & Books, da Shop: books + curiosities, Daunt Books</p>
       <p class = "photocaption"> Photo By (Right to Left): Kevin J. Beaty, Powell's City of Books, Ben O'Grady, da Shop: books + curiosities, Daunt Books</p> 
   </div>
