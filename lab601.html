@@ -115,30 +115,43 @@
     $(document) .ready ( function() {
       console.log("started Javascript");
       //Hi! This is my comment, which should be ignored by JavaScript. 
+      
       $("#clicknotes1").click(function() {
         console.log("clicked on first button");
+        //This function activates the first notes button in my bookstores table. 
         $("#div_ctr1").html("The Tattered Cover bookstore on East Colfax has a great selection of books. It has cozy seating, a small cafe, and is built within a former theatre. It's also next to the record shop, Twist and Shout.");
       });
       $("#clicknotes2").click(function() {
         console.log("clicked on second button");
+        //This function activates the second notes button in my bookstores table.
         $("#div_ctr2").html("Powell's is the largest independent bookstore in the world! It takes up an entire city block and has three floors. It has a cafe, garden center, and tons of books. A must-visit for any book lover!");
       });
       $("#clicknotes3").click(function() {
         console.log("clicked on third button");
+        //This function activates the third notes button in my bookstores table.
         $("#div_ctr3").html("Black Ice stocks a selection of books alongside comics, tabletop gaming supplies, and manga and graphic novels. It also has a small cafe and ice cream shop. One of my favorite places in my college town.");
       });
       $("#clicknotes4").click(function() {
         console.log("clicked on fourth button");
+        //This function activates the fourth notes button in my bookstores table.
         $("#div_ctr4").html("da Shop is a small bookshop with a well-curated selection of books with a special focus on authors from the Hawaiian Islands.");
       });
       $("#clicknotes5").click(function() {
         console.log("clicked on fifth button");
+        //This function activates the fifth notes button in my bookstores table.
         $("#div_ctr5").html("Daunt Books was a magical place! The location on Marylebone High Street is in an old Edwardian building with cozy wooden interiors and large skylights. It specializes in travel books for locations across the world.");
       });
       $("#togglebanner").click(function() {
         console.log("clicked on photo toggle button");
+        //This function activates the fade toggle of my banner photo. 
         $("#mypic").fadeToggle(200, "swing");
       });
+      S("#appear").click(function() {
+        console.log("clicked on button appears.");
+        //This function reveals the hidden text at the bottom of the page. 
+        $("#hidden_text").text("Reading can be a great way to destress. Whether you read a physical book or listen to audiobooks, it is an amazing way to relax!");
+      });
+      
     });
   </script>
     
@@ -203,7 +216,10 @@
       <p class = "photocaption"> Right to Left: Tattered Cover, Powell's City of Books, Black Ice Comics & Books, da Shop: books + curiosities, Daunt Books</p>
       <p class = "photocaption"> Photo By (Right to Left): Kevin J. Beaty, Powell's City of Books, Ben O'Grady, da Shop: books + curiosities, Daunt Books</p> 
   </div>
-      
+  <div id="hidden_text">
+    <button id="appear">Click to reveal a hidden message!</button>
+  </div>
+    
   </div>
   </body>
 </html>
