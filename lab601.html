@@ -130,7 +130,7 @@
         $("#div_ctr5").html("Daunt Books was a magical place! The location on Marylebone High Street is in an old Edwardian building with cozy wooden interiors and large skylights. It specializes in travel books for locations across the world.");
       });
       $("#togglebanner").click(function() {
-        $("#mypic").fadeToggle();
+        $("#mypic").fadeToggle(200, "swing");
       });
     });
   </script>
@@ -192,9 +192,9 @@
   <p>    </p>
   <div id = "bannerphoto">
       <img id = "mypic" src = "bannerbooks.jpg" />
+      <button id="togglebanner">Toggle the photo on/off.</button>
       <p class = "photocaption"> Right to Left: Tattered Cover, Powell's City of Books, Black Ice Comics & Books, da Shop: books + curiosities, Daunt Books</p>
       <p class = "photocaption"> Photo By (Right to Left): Kevin J. Beaty, Powell's City of Books, Ben O'Grady, da Shop: books + curiosities, Daunt Books</p> 
-      <button id="togglebanner">Toggle the photo on/off.</button>
   </div>
       
   </div>
