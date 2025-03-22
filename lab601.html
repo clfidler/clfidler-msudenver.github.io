@@ -113,23 +113,30 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script>
     $(document) .ready ( function() {
+      console.log("started Javascript");
       //Hi! This is my comment, which should be ignored by JavaScript. 
       $("#clicknotes1").click(function() {
+        console.log("clicked on first button");
         $("#div_ctr1").html("The Tattered Cover bookstore on East Colfax has a great selection of books. It has cozy seating, a small cafe, and is built within a former theatre. It's also next to the record shop, Twist and Shout.");
       });
       $("#clicknotes2").click(function() {
+        console.log("clicked on second button");
         $("#div_ctr2").html("Powell's is the largest independent bookstore in the world! It takes up an entire city block and has three floors. It has a cafe, garden center, and tons of books. A must-visit for any book lover!");
       });
       $("#clicknotes3").click(function() {
+        console.log("clicked on third button");
         $("#div_ctr3").html("Black Ice stocks a selection of books alongside comics, tabletop gaming supplies, and manga and graphic novels. It also has a small cafe and ice cream shop. One of my favorite places in my college town.");
       });
       $("#clicknotes4").click(function() {
+        console.log("clicked on fourth button");
         $("#div_ctr4").html("da Shop is a small bookshop with a well-curated selection of books with a special focus on authors from the Hawaiian Islands.");
       });
       $("#clicknotes5").click(function() {
+        console.log("clicked on fifth button");
         $("#div_ctr5").html("Daunt Books was a magical place! The location on Marylebone High Street is in an old Edwardian building with cozy wooden interiors and large skylights. It specializes in travel books for locations across the world.");
       });
       $("#togglebanner").click(function() {
+        console.log("clicked on photo toggle button");
         $("#mypic").fadeToggle(200, "swing");
       });
     });
