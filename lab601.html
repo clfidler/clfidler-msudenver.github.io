@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Lab 6 Webpage: Bookstores and Libraries</title>
+  <style>
+    body {width: 100%; background-color: #cccccc}
+    #books {
+      text-align: left;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+    #bannerphoto {
+      background-color: #94b3ce;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      border: 5px solid #202f78;
+      border-radius: 5px;
+    }
+    #mypic {
+      width: 95%;
+      object-fit: contain;
+      border: 10px solid #202f78;
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+    }
+    .photocaption {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Garamond;
+      text-align: left;
+      padding-left: 50px;
+    }
+    p, td, li {
+      font-size: 20px;
+      font-family: Garamond;
+    }
+    h1 {
+      font-family: Garamond;
+      background-color: #d9d2e9;
+      font-size: 50px;
+      color: black;
+      text-align: center;
+      border: 5px solid #b8aed2;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    h2 {
+      font-family: Garamond;
+      background-color: #94b3ce;
+      font-size: 30px;
+      color: black;
+      text-align: center;
+      border: 5px solid #202f78;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    h4 {
+      font-family: Garamond;
+      background-color: #94b3ce;
+      font-size: 30px;
+      text-align: center;
+      color: black;
+      border: 5px solid #202f78;
+      border-radius: 5px;
+      padding: 8px;
+    }
+    h3 {
+      font-family: Garamond;
+      text-decoration: underline;
+      font-size: 25px;
+    }
+    a {text-decoration: underline; color: black; font-family: Garamond;}
+    a:visited {color: blue; font-family: Garamond;}
+    a:hover {background-color: #94b3ce; color: black; font-family: Garamond;}
+    #denverlibraries {
+      background-color: #d9d2e9;
+      float: left;
+      margin-left: 0;
+      margin-right: 10px;
+      border: dashed 8px #000000;
+      padding: 10px;
+      width: 850px;
+      height: auto;
+      border: 5px solid #b8aed2;
+      border-radius: 5px;
+    }
+    #bookstoresvisited {
+      width: 100%;
+      font-family: Garamond;
+      border-collapse: collapse;
+    }
+    #bookstoresvisited th, #bookstoresvisited td {
+      border: 3px solid #000000;
+      padding: 8px;
+    }
+    #bookstoresvisited td {
+      background-color: #d9d2e9;
+      color: black;
+    }
+    #bookstoresvisited th {
+      font-family: Garamond;
+      font-weight: bold;
+      font-size: 25px;
+      background-color: #202f78;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document) .ready ( function() {
+      //Hi! This is my comment, which should be ignored by JavaScript. 
+      //Daunt Books was a magical place! The location on Marylebone High Street is in an old Edwardian building with cozy wooden interiors and large skylights. It specializes in travel books for locations across the world.
+      $("#clicknotes1").click(function() {
+        $("#clicknotes1").html("The Tattered Cover bookstore on East Colfax has a great selection of books. It has cozy seating, a small cafe, and is built within a former theatre. It's also next to the record shop, Twist and Shout.");
+      });
+      $("#clicknotes2").click(function() {
+        $("#clicknotes2").html("Powell's is the largest independent bookstore in the world! It takes up an entire city block and has three floors. It has a cafe, garden center, and tons of books. A must-visit for any book lover!");
+      });
+      $("#clicknotes3").click(function() {
+        $("#clicknotes3").html("Black Ice stocks a selection of books alongside comics, tabletop gaming supplies, and manga and graphic novels. It also has a small cafe and ice cream shop. One of my favorite places in my college town.");
+      });
+      $("#clicknotes4").click(function() {
+        $("#clicknotes4").html("da Shop is a small bookshop with a well-curated selection of books with a special focus on authors from the Hawaiian Islands.");
+      });
+      $("#clicknotes5").click(function() {
+        $("#clicknotes5").html("Daunt Books was a magical place! The location on Marylebone High Street is in an old Edwardian building with cozy wooden interiors and large skylights. It specializes in travel books for locations across the world.");
+      });
+    });
+  </script>
+    
+  </head>
+  <body>
+  <div id = "books">
+    <h1>My Lab 6 Webpage: Bookstores and Libraries</h1>
+    <h2>The Importance of Bookstores & Libraries</h2>
+    <p>Bookstores and libraries are pillars of communities, providing inclusive spaces promoting literacy and community engagement. Both bookstores and libraries foster spaces of curiosity, discovery, and imagination. Many independent bookstores stock independently published, local authors, who don’t have a huge marketing budget, ensuring their work is put in front of audiences. Additionally, bookstores and libraries make concentrated efforts to ensure access to banned books, ensuring that books with themes that state and local governments are politically opposed to are not successfully censored completely. Many bookstores and libraries offer book clubs, providing spaces for relationship-building within a community. Libraries often offer free children’s programs that promote literacy and creativity. Libraries and bookstores are also important to a local economy. To outline this, consider Amazon’s impact on the book industry.</p>
+  <div id = "denverlibraries">
+    <h4>Libraries in the Denver Area</h4>
+    <p>There are 50+ libraries in the Denver metro area. Here's some great ones to visit. Library cards are free!</p>
+    <ul>
+      <li>Denver Public Library: Central Library – 10 W 14th Ave, Denver, CO 80204</li>
+      <li>Eloise May Library: Arapahoe Libraries – 1471 S. Parker Rd, Denver, CO 80231</li>
+      <li>Aurora Public Library – 1551 Chambers Rd, Aurora, CO 80011</li>
+      <li>Englewood Public Library – 1000 Englewood Pkwy, Englewood, CO 80110</li>
+      <li>Edgewater Library – Jefferson County Public Libraries – 1800 N. Harlan St., Edgewater, CO 80214</li>
+    </ul>
+  </div>
+  <div id = "amazon">
+    <h3>Resisting Amazon’s Attempts to Monopolize the Book Industry</h3>
+    <p>Amazon is certainly the cheapest way to buy books, often pricing hardcover books at $15 or less, while a bookstore would sell the same book for $20-$30. This is because bookstores must make a profit on their sales, while Amazon actively sells their books at a loss. This appears to be a great deal for the consumer. However, this is simply an attempt by Amazon to undercut their competitors and ultimately put those competitors out of business to monopolize the industry. This is demonstrated best by Amazon’s price war with Diapers.com. In the late 2000s, Diapers.com represented a decent chunk of children’s care supplies including diapers and baby formula. Amazon began pricing their diapers at a loss to undercut Diapers.com, ultimately damaging the smaller company’s profits enough that Amazon bought out the company. Following the buyout, Amazon drastically increased the price of their diapers now that they had taken out their major competitor. Therefore, there’s reason to believe that Amazon is trying to do the same thing to their main competitor for books, Barnes & Noble, as well as other bookstores. Not only does this undermine the consumer and smaller businesses, but it also threatens the publishing industry. If Amazon succeeds in monopolizing book sales, the company will essentially determine what’s published. Publishers will begin to only publish books that seem to sell well on Amazon. Therefore, I urge you to utilize local bookstores and libraries to obtain books. While local bookstores price their books higher than Amazon, there are tons of books available at your local library for free! Most major cities also have used bookstores, which typically price their books between $1-$10. Additionally, buying from local stores keeps more money in the local economy than buying from Amazon.</p>
+  </div>
+    <h2>Unique Bookstores I've Visited</h2>
+    <table id = "bookstoresvisited">
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Notes</th>
+      </tr>
+      <tr>
+        <td><a href = "https://www.tatteredcover.com/">Tattered Cover</a></td>
+        <td>Denver, Colorado</td>
+        <td><button id="clicknotes1"> Click to reveal my notes...</button></td>
+      </tr>
+      <tr>
+        <td><a href = "https://www.powells.com/">Powell's City Of Books</a></td>
+        <td>Portland, Oregon</td>
+        <td><button id="clicknotes2"> Click to reveal my notes...</button></td>
+      </tr>
+      <tr>
+        <td><a href = "https://www.blackicecomics.com/">Black Ice Comics & Books</a></td>
+        <td>Houghton, Michigan</td>
+        <td><button id="clicknotes3"> Click to reveal my notes...</button></td>
+      </tr>
+      <tr>
+        <td><a href = "https://dashophnl.com/">da Shop: books + curiosities</a></td>
+        <td>Honolulu, Hawai'i</td>
+        <td><button id="clicknotes4"> Click to reveal my notes...</button></td>
+      </tr>
+      <tr>
+        <td><a href = "https://dauntbooks.co.uk/">Daunt Books</a></td>
+        <td>London, United Kingdom</td>
+        <td><button id="clicknotes5"> Click to reveal my notes...</button></td>
+      </tr>
+    </table>
+  <p>    </p>
+  <div id = "bannerphoto">
+      <img id = "mypic" src = "bannerbooks.jpg" />
+      <p class = "photocaption"> Right to Left: Tattered Cover, Powell's City of Books, Black Ice Comics & Books, da Shop: books + curiosities, Daunt Books</p>
+      <p class = "photocaption"> Photo By (Right to Left): Kevin J. Beaty, Powell's City of Books, Ben O'Grady, da Shop: books + curiosities, Daunt Books</p> 
+  </div>
+      
+  </div>
+  </body>
+</html>
