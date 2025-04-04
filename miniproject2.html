@@ -43,12 +43,12 @@
                     // if the letter has already been clicked on, 
                     // let the user know it's already been tried
                     if (triedLetters.includes(letter)) {
-                      $("#info").text("Letter " + letter + "already tried.");
+                      $("#info").text("Letter " + letter + " already tried.");
                     // if the letter isn't in the word, reduce
                     // the number of tries and check if they lost
                     } else if (! word.includes(letter)) {
                       // reduce the number of remaining tries by 1
-                      tries - tries = 1; 
+                      tries = tries - 1; 
                       $("#guesses").text("Mistakes, left: " + tries);
                       // are they out of tries? then they lost!
                       if (tries < 1) {
@@ -81,8 +81,8 @@
                     }
                     // add the letter to letters already tried
                     triedLetters = triedLetters + letter;
-                    console.log("triedLetters is", triedLetters);
-                    console.log("word is" , word);
+                    console.log("triedLetters is ", triedLetters);
+                    console.log("word is " , word);
                   }
               });
              // 
