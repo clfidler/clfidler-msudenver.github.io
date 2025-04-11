@@ -4,25 +4,26 @@
     <title>My Lab 7 Webpage: Houghton, Michigan</title>
  
   <style>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>  
-    
-    #houghtonmap { height: 180px; }
+    #map { height: 180px; }
   </style>
-  
+    
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+    
  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
      crossorigin=""></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script>
-  var map = L.map('houghtonmap').setView([47.1198, -88.5680], 13);
-  
-  var defaultBase = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+ $(document).ready( function() {
+  var map = L.map('map').setView([47.1198, -88.5680], 13);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-
+ })
   
 </script>
   
@@ -30,6 +31,6 @@
   
   <body>
     <h1>My Lab 7 Webpage: Houghton, Michigan</h1>
-    <div id="houghtonmap"></div>
+    <div id="map"></div>
   </body>
 </html>
