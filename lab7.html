@@ -8,8 +8,8 @@
           background-color: #bce6c5}
     h1 {color: black; 
         text-decoration: bold;}
-    #map {height: 600px;
-           width: 600px}
+    #map {height: 1000px;
+           width: 1000px}
   </style>
     
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -28,12 +28,52 @@
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
+
+ var markerintern = L.marker([47.12634198783337, -88.58528989385087]).addTo(map);
+ var markerlibrary = L.marker([47.122863088188204, -88.56832124685131]).addTo(map);
+ var markersushi = L.marker([47.12165736452162, -88.56919200755888]).addTo(map); 
+ var markerkbc = L.marker([47.12205568398399, -88.56886488122927]).addTo(map);
+ var markerambass = L.marker([47.122001283808906, -88.5721445397587]).addTo(map);
+ var markerrodeo = L.marker([47.12008756588549, -88.55540853328796]).addTo(map);
+ var circle = L.circle([47.11277683244091, -88.54185476947683], {
+    color: 'purple',
+    fillColor: '#3f225e',
+    fillOpacity: 0.5,
+    radius: 5
+    }).addTo(map);
+var polygon = L.polygon([
+    [47.1206574394265, -88.55170192225019],
+    [47.11989285225078, -88.55211980122773],
+    [47.117864431356466, -88.54108779598823],
+    [47.115601614665835, -88.53986797764152]
+    ]).addTo(map);
+
+markerintern.bindPopup("I interned at the Western Upper Peninsula Planning and Development Region during college.").openPopup();
+markerlibrary.bindPopup("The Portage Lake District Library is a wonderful place community space!").openPopup();
+markersushi.bindPopup("Sky Sushi is the best place to get boba in town. Try the Taro!").openPopup();
+markerkbc.bindPopup("The Keweenaw Brewing Company is the local brewery. Grab a pint for just $3.50.").openPopup();
+markerambass.bindPopup("The Ambassador Restaurant serves my favorite pizza in town + great fishbowls in an incredibly cozy space.").openPopup();
+markerrodeo.bindPopup("Rodeo Mexican Kitchen serves up the most amazing burritos!").openPopup();
+
+circle.bindPopup("The cemetery is an incredible place to take walks. During the autumn, the fallen leaves and mist are beautiful. Wildlife can often be seen here.");
+polygon.bindPopup("Michigan Technological University is my undergraduate college alma mater.");
+
+var popup = L.popup()
+    .setLatLng([47.1198, -88.5680])
+    .setContent("Houghton, Michigan")
+    .openOn(map);
+
+var popup = L.popup();
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+    }
+  map.on('click', onMapClick);
  })
-  
-</script>
-  
-  </head>
-  
+</script>  
+</head>
   <body>
     <h1>My Lab 7 Webpage: Houghton, Michigan</h1>
     <div id="map"></div>
