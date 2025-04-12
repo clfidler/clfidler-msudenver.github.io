@@ -23,7 +23,7 @@
 
 <script>
  $(document).ready( function() {
-  var map = L.map('map').setView([47.1198, -88.5680], 13);
+  var map = L.map('map').setView([47.1198, -88.5680], 6);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -39,13 +39,13 @@
     color: 'purple',
     fillColor: '#3f225e',
     fillOpacity: 0.5,
-    radius: 5
+    radius: 500
     }).addTo(map);
 var polygon = L.polygon([
     [47.1206574394265, -88.55170192225019],
     [47.11989285225078, -88.55211980122773],
-    [47.117864431356466, -88.54108779598823],
-    [47.115601614665835, -88.53986797764152]
+    [47.115601614665835, -88.53986797764152],
+    [47.117864431356466, -88.54108779598823]
     ]).addTo(map);
 
 markerintern.bindPopup("I interned at the Western Upper Peninsula Planning and Development Region during college.").openPopup();
