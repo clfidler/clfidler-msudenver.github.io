@@ -24,7 +24,7 @@
 
 <script>
  $(document).ready( function() {
-  var map = L.map('map').setView([47.1198, -88.5680], 17);
+  var map = L.map('map').setView([47.12403952344848, -88.56951557441484], 15);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -40,7 +40,7 @@
     color: 'purple',
     fillColor: '#3f225e',
     fillOpacity: 0.5,
-    radius: 300
+    radius: 250
     }).addTo(map);
 var polygon = L.polygon([
     [47.1206574394265, -88.55170192225019],
